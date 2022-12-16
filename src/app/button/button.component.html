@@ -2,20 +2,26 @@
 <body >
   <style>
 
-    @media (min-width: 640px) { div {
-      margin: left 25%;
-    } }
-
-
-    @media (min-width: 1024px) { div {
-      margin-left:500px;
-    } }
+   div{
+display: flex;
+justify-content: center;
+   }
+   .div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
 
   </style>
   <div >
+    <div class="div">
     <p>l'etat de la lampe est:<span> {{action}} </span> </p>
-    <input type="submit" value="allumer"    (click)="allumer()" >
-    <input type="submit" value="eteindre" (click)="eteindre()"  >
+    <div>
+      <input class="input" type="submit" value="allumer"    (click)="allumer()" >
+      <input class="input" type="submit" value="eteindre" (click)="eteindre()"  >
+    </div>
+
+  </div>
   </div>
 
 </body>

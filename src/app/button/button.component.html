@@ -11,14 +11,23 @@ justify-content: center;
     flex-direction: column;
     justify-content: center;
    }
+   .input1{
+    background-color: green;
+    margin-right: 5px;
+    color: white;
+   }
+   .input2{
+    background-color: red;
+    color: white;
+   }
 
   </style>
   <div >
     <div class="div">
     <p>l'etat de la lampe est:<span> {{action}} </span> </p>
     <div>
-      <input class="input" type="submit" value="allumer"    (click)="allumer()" >
-      <input class="input" type="submit" value="eteindre" (click)="eteindre()"  >
+      <input  class="input1" type="submit" value="allumer"    (click)="allumer()" >
+      <input class="input2" type="submit" value="eteindre" (click)="eteindre()"  >
     </div>
 
   </div>

@@ -9,7 +9,7 @@ import { ApiService } from '../api.service';
 })
 export class ButtonComponent implements OnInit {
 
-  action:any
+  action:any='eteinte'
 
 
   ngOnInit(): void {

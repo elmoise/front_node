@@ -14,11 +14,9 @@ export class ButtonComponent implements OnInit {
 
   ngOnInit(): void {
     {
-      this.api.get().subscribe(
-      result=>this.action=Object.values(result)
 
 
-      )
+
 
      }
   }

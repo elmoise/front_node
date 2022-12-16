@@ -1,0 +1,12 @@
+
+  <div class="container">
+    <form [formGroup]="profileForm" >
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required formControlName="uname">
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" formControlName="psw" required>
+
+    <button type="submit" (click)="onSubmit()">Login</button>
+  </form>
+  </div>
